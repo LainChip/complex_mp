@@ -31,14 +31,24 @@ struct fb_ip_ctl
     volatile uint32_t ccr;
 };
 
+struct shared_params
+{
+    volatile int play_num;   // Only be written by play thread
+    volatile int decode_num; // Only be written by decode thread
+    volatile int decode_end;
+
+    int sample_perframe;
+    int fps;
+    int uspf;
+};
+
 int open_audio_device();
 int configure_audio_device();
 void play_audio(int8_t *data, int32_t size);
-int play_mjpeg_file(int mpeg_fd,
-                    int mpeg_size,
-                    volatile struct fb_ip_ctl *fb_ctl,
-                    volatile struct decode_ip_ctl *decode_mmio,
-                    uint32_t buf_paddr,
-                    uint32_t video_fps);
+int decode_thread(int mpeg_fd,
+                  int mpeg_size,
+                  volatile struct decode_ip_ctl *decode_mmio,
+                  uint32_t *buf);
 
+int play_thread(volatile struct fb_ip_ctl *fb_ctl);
 #endif
