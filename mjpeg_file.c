@@ -93,7 +93,7 @@ int play_one_frame(volatile struct fb_ip_ctl *fb_ctl)
 
     // 使用 aplay 播放音频帧
     play_audio(audio_buf[play_ptr], share_param->sample_perframe * 4);
-    printf("play_audio @%x\n", play_ptr);
+    // printf("play_audio @%x\n", play_ptr);
     share_param->play_num++;
     return 0;
 }
@@ -108,15 +108,16 @@ int decode_one_frame(int mpeg_fd,
     int vframe_size, aframe_size;
     vframe_size = frame_size;
     aframe_size = padding(share_param->sample_perframe * 4);
-    printf("decode thread: a%d ,v%d\n", aframe_size, vframe_size);
+    printf("decode thread: a%d ,v%d, %d\n", aframe_size, vframe_size, decode_ptr);
 
     // 拷贝 mpeg 到 buf
     read(mpeg_fd, phy_buf_ptr, padding(vframe_size));
+    // flush_cache();
     // 复位设备
     decode_mmio->ctrl = 0x40000000;
 
     // 配置 decode ip 的地址
-    decode_mmio->src = 0x78000000;
+    decode_mmio->src = 0x07800000;
     decode_mmio->dst = FRAMEBUFFER_START + decode_ptr * FRAMEBUFFER_SIZE;
     decode_mmio->stride = 1024;
 
@@ -131,7 +132,7 @@ int decode_one_frame(int mpeg_fd,
     while (decode_mmio->status & 0x1)
     {
         printf("decoder_mmio %x %x %x\n", decode_mmio->src, decode_mmio->dst, decode_mmio->status);
-        usleep(1000);
+        usleep(2000);
     }
 
     // 解码指针++
@@ -147,20 +148,23 @@ int play_thread(volatile struct fb_ip_ctl *fb_ctl)
     uint32_t next_frame_time = start_time + 500000; // 视频等待 500ms 再开始播放
     while (1)
     {
-        int playable_frame = share_param->decode_num - share_param->play_num;
+        int playable_frame = *((volatile uint32_t *)&share_param->decode_num) - share_param->play_num;
         if (playable_frame)
         {
             uint32_t now_time = get_us();
             int32_t gap_time = now_time - next_frame_time;
-            if (-750 < gap_time)
+            if (-5000 < gap_time)
             {
+                // printf("now time is %d", now_time);
                 // 这时候说明新的帧可以播放了
                 play_one_frame(fb_ctl);
-                next_frame_time = next_frame_time + (1000000 / share_param->fps);
+                next_frame_time = now_time + share_param->uspf - 1000;
             }
         }
         else
         {
+            printf("decoder stall!\n");
+            usleep(10000);
             if (share_param->decode_end)
             {
                 break;
@@ -190,16 +194,22 @@ int decode_thread(int mpeg_fd,
         {
             // 对于每一帧
             int frame_size = b_hdr.frame_size[i];
+            if (frame_size == 0)
+                continue;
             while (1)
             {
-                int playable_frame = share_param->decode_num - share_param->play_num;
+                int playable_frame = share_param->decode_num - *((volatile uint32_t *)&share_param->play_num);
                 if (playable_frame < 2)
                 {
                     // 这时候说明可以解码一帧
                     decode_one_frame(mpeg_fd, frame_size, decode_mmio, buf);
                     break;
                 }
-                sleep(1000);
+                // else
+                // {
+                //     printf("decode thread stall: %d\n", playable_frame);
+                // }
+                usleep(50000);
             }
             read_size += frame_size;
         }

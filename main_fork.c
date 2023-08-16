@@ -44,7 +44,7 @@ int decode_main(int argc, char *argv[])
     void *phys_buf;
     int phys_fd;
     phys_fd = open("/dev/mem", O_RDWR | O_SYNC);
-    phys_buf = mmap(NULL, 1024 * 1024, PROT_READ | PROT_WRITE, MAP_SHARED, phys_fd, 0x78000000);
+    phys_buf = mmap(NULL, 1024 * 1024, PROT_READ | PROT_WRITE, MAP_SHARED, phys_fd, 0x07800000);
 
     printf("Decoder: open buffer @0x%08x\n", phys_buf);
     int r = decode_thread(mpeg_fd, mpeg_size, decode_mmio, phys_buf);
@@ -90,15 +90,21 @@ int main(int argc, char *argv[])
     sscanf(fps_param, "%d", &fps);
 
     // 创建共享页面，共计13页
-    void *shared_buf = mmap(NULL, 13 * 4096, PROT_READ | PROT_WRITE, MAP_SHARED, -1, 0);
-    share_param = shared_buf + 12 * 4096;
-    memset(share_param, 0, 128);
+    printf("FPS param is %d.\n", fps);
+    void *shared_buf = mmap(NULL, 25 * 4096, PROT_READ | PROT_WRITE, MAP_SHARED | MAP_ANONYMOUS, -1, 0);
+    share_param = shared_buf + 24 * 4096;
+    share_param->fps = fps;
+    share_param->sample_perframe = 48000 / fps;
+    share_param->uspf = 1000000 / fps;
+    share_param->play_num = 0;
+    share_param->decode_num = 0;
+    share_param->decode_end = 0;
     audio_buf[0] = shared_buf;
-    audio_buf[1] = shared_buf + 4 * 4096;
-    audio_buf[2] = shared_buf + 8 * 4096;
+    audio_buf[1] = shared_buf + 8 * 4096;
+    audio_buf[2] = shared_buf + 16 * 4096;
 
     // 主线程输出信息
-    printf("Main thread: start to fork sons");
+    printf("Main thread: start to fork sons\n");
     int decode_pid = fork();
     if (decode_pid == 0)
     {

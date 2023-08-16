@@ -1,0 +1,425 @@
+Decoder: open buffer @0x77942000
+Decode thread is in.
+decode thread: a16384 ,v28223, 0
+decode thread: finish a frame.
+decode thread: a16384 ,v28205, 1
+decode thread: finish a frame.
+[   26.096000] xlnx_formatter_pcm 1c120000.audio_formatter: stream 0 : format = 1 mode = 3 ch_limit = 2
+Player: start to play thread.
+Play thread is in.
+now time is 26214512play_audio @0
+decode thread: a16384 ,v28224, 2
+decode thread: finish a frame.
+now time is 26384903play_audio @1
+decode thread: a16384 ,v28200, 0
+decoder_mmio 7800000 7a00000 1
+decode thread: finish a frame.
+now time is 26585147play_audio @2
+decode thread: a16384 ,v28261, 1
+decoder_mmio 7800000 7c00000 1
+decode thread: finish a frame.
+now time is 26687708play_audio @0
+decode thread: a16384 ,v57253, 2
+decoder_mmio 7800000 7e00000 1
+decode thread: finish a frame.
+now time is 26984898play_audio @1
+decode thread: a16384 ,v57262, 0
+decode thread: finish a frame.
+now time is 27185868play_audio @2
+decode thread: a16384 ,v57260, 1
+decoder_mmio 7800000 7c00000 1
+decode thread: finish a frame.
+now time is 27288887play_audio @0
+decode thread: a16384 ,v20895, 2
+decoder_mmio 7800000 7e00000 1
+decode thread: finish a frame.
+now time is 27584838play_audio @1
+decode thread: a16384 ,v20995, 0
+decoder_mmio 7800000 7a00000 1
+decode thread: finish a frame.
+now time is 27788807play_audio @2
+decode thread: a16384 ,v20938, 1
+decoder_mmio 7800000 7c00000 1
+decode thread: finish a frame.
+now time is 27885900play_audio @0
+decode thread: a16384 ,v47726, 2
+decoder_mmio 7800000 7e00000 1
+decode thread: finish a frame.
+now time is 28135528play_audio @1
+decode thread: a16384 ,v47773, 0
+decode thread: finish a frame.
+now time is 28336896play_audio @2
+decode thread: a16384 ,v47774, 1
+decoder_mmio 7800000 7c00000 1
+decode thread: finish a frame.
+now time is 28459308play_audio @0
+decode thread: a16384 ,v25601, 2
+decode thread: finish a frame.
+now time is 28686065play_audio @1
+decode thread: a16384 ,v25655, 0
+decoder_mmio 7800000 7a00000 1
+decode thread: finish a frame.
+now time is 28886558play_audio @2
+decode thread: a16384 ,v25648, 1
+decoder_mmio 7800000 7c00000 1
+decode thread: finish a frame.
+now time is 28989705play_audio @0
+decode thread: a16384 ,v63329, 2
+decode thread: finish a frame.
+now time is 29236940play_audio @1
+decode thread: a16384 ,v62915, 0
+decode thread: finish a frame.
+now time is 29436956play_audio @2
+decode thread: a16384 ,v62941, 1
+decoder_mmio 7800000 7c00000 1
+decode thread: finish a frame.
+now time is 29540987play_audio @0
+decode thread: a16384 ,v62903, 2
+decoder_mmio 7800000 7e00000 1
+decode thread: finish a frame.
+now time is 29789642play_audio @1
+decode thread: a16384 ,v6873, 0
+decoder_mmio 7800000 7a00000 1
+decode thread: finish a frame.
+now time is 29990033play_audio @2
+decode thread: a16384 ,v6869, 1
+decoder_mmio 7800000 7c00000 1
+decode thread: finish a frame.
+now time is 30087040play_audio @0
+decode thread: a16384 ,v6870, 2
+decoder_mmio 7800000 7e00000 1
+decode thread: finish a frame.
+now time is 30336963play_audio @1
+decode thread: a16384 ,v6869, 0
+decode thread: finish a frame.
+now time is 30537809play_audio @2
+decode thread: a16384 ,v6873, 1
+decoder_mmio 7800000 7c00000 1
+decode thread: finish a frame.
+now time is 30640001play_audio @0
+decode thread: a16384 ,v83367, 2
+decoder_mmio 7800000 7e00000 1
+decode thread: finish a frame.
+now time is 30887273play_audio @1
+decode thread: a16384 ,v83390, 0
+decoder_mmio 7800000 7a00000 1
+decode thread: finish a frame.
+now time is 31087945play_audio @2
+decode thread: a16384 ,v83374, 1
+decoder_mmio 7800000 7c00000 1
+decode thread: finish a frame.
+now time is 31190803play_audio @0
+decode thread: a16384 ,v83399, 2
+decode thread: finish a frame.
+now time is 31437824play_audio @1
+decode thread: a16384 ,v83544, 0
+decode thread: finish a frame.
+now time is 31638262play_audio @2
+decode thread: a16384 ,v83517, 1
+decoder_mmio 7800000 7c00000 1
+decode thread: finish a frame.
+now time is 31741022play_audio @0
+decode thread: a16384 ,v83541, 2
+decoder_mmio 7800000 7e00000 1
+decode thread: finish a frame.
+now time is 31987933play_audio @1
+decode thread: a16384 ,v83569, 0
+decode thread: finish a frame.
+now time is 32188861play_audio @2
+decode thread: a16384 ,v83565, 1
+decode thread: finish a frame.
+now time is 32292894play_audio @0
+decode thread: a16384 ,v83555, 2
+decoder_mmio 7800000 7e00000 1
+decode thread: finish a frame.
+now time is 32587977play_audio @1
+decode thread: a16384 ,v83569, 0
+decoder_mmio 7800000 7a00000 1
+decoder_mmio 7800000 7a00000 1
+decode thread: finish a frame.
+now time is 32789640play_audio @2
+decode thread: a16384 ,v82272, 1
+decoder_mmio 7800000 7c00000 1
+decode thread: finish a frame.
+now time is 32891769play_audio @0
+decode thread: a16384 ,v81008, 2
+decode thread: finish a frame.
+now time is 33188834play_audio @1
+decode thread: a16384 ,v82417, 0
+decoder_mmio 7800000 7a00000 1
+decode thread: finish a frame.
+now time is 33389014play_audio @2
+decode thread: a16384 ,v82196, 1
+decode thread: finish a frame.
+now time is 33491826play_audio @0
+decode thread: a16384 ,v79736, 2
+decoder_mmio 7800000 7e00000 1
+decode thread: finish a frame.
+now time is 33788916play_audio @1
+decode thread: a16384 ,v82042, 0
+decode thread: finish a frame.
+now time is 33989934play_audio @2
+decode thread: a16384 ,v80010, 1
+decoder_mmio 7800000 7c00000 1
+decode thread: finish a frame.
+now time is 34092850play_audio @0
+decode thread: a16384 ,v79620, 2
+decoder_mmio 7800000 7e00000 1
+decode thread: finish a frame.
+now time is 34388858play_audio @1
+decode thread: a16384 ,v79517, 0
+decode thread: finish a frame.
+now time is 34589998play_audio @2
+decode thread: a16384 ,v80418, 1
+decode thread: finish a frame.
+now time is 34692926play_audio @0
+decode thread: a16384 ,v78443, 2
+decoder_mmio 7800000 7e00000 1
+decode thread: finish a frame.
+now time is 34989116play_audio @1
+decode thread: a16384 ,v80066, 0
+decoder_mmio 7800000 7a00000 1
+decode thread: finish a frame.
+now time is 35190306play_audio @2
+decode thread: a16384 ,v78139, 1
+decode thread: finish a frame.
+now time is 35293115play_audio @0
+decode thread: a16384 ,v80177, 2
+decoder_mmio 7800000 7e00000 1
+decode thread: finish a frame.
+now time is 35589853play_audio @1
+decode thread: a16384 ,v77845, 0
+decoder_mmio 7800000 7a00000 1
+decode thread: finish a frame.
+now time is 35790700play_audio @2
+decode thread: a16384 ,v79135, 1
+decoder_mmio 7800000 7c00000 1
+decode thread: finish a frame.
+now time is 35893903play_audio @0
+decode thread: a16384 ,v79613, 2
+decode thread: finish a frame.
+now time is 36190121play_audio @1
+decode thread: a16384 ,v79749, 0
+decoder_mmio 7800000 7a00000 1
+decoder_mmio 7800000 7a00000 1
+decode thread: finish a frame.
+now time is 36443795play_audio @2
+decode thread: a16384 ,v79082, 1
+decoder_mmio 7800000 7c00000 1
+decode thread: finish a frame.
+now time is 36543497play_audio @0
+decode thread: a16384 ,v76672, 2
+decoder_mmio 7800000 7e00000 1
+decode thread: finish a frame.
+now time is 36791046play_audio @1
+decode thread: a16384 ,v78356, 0
+decode thread: finish a frame.
+now time is 36991445play_audio @2
+decode thread: a16384 ,v77783, 1
+decoder_mmio 7800000 7c00000 1
+decode thread: finish a frame.
+now time is 37095956play_audio @0
+decode thread: a16384 ,v76794, 2
+decoder_mmio 7800000 7e00000 1
+decode thread: finish a frame.
+now time is 37390852play_audio @1
+decode thread: a16384 ,v76535, 0
+decode thread: finish a frame.
+now time is 37591773play_audio @2
+decode thread: a16384 ,v78684, 1
+decoder_mmio 7800000 7c00000 1
+decoder_mmio 7800000 7c00000 1
+decode thread: finish a frame.
+now time is 37694744play_audio @0
+decode thread: a16384 ,v78661, 2
+decoder_mmio 7800000 7e00000 1
+decode thread: finish a frame.
+now time is 37991212play_audio @1
+decode thread: a16384 ,v78682, 0
+decoder_mmio 7800000 7a00000 1
+decode thread: finish a frame.
+now time is 38192889play_audio @2
+decode thread: a16384 ,v78706, 1
+decode thread: finish a frame.
+now time is 38295075play_audio @0
+decode thread: a16384 ,v78852, 2
+[   38.668000] ocsdc 1fe10000.ocsdc: Data FIFO error!
+decode thread: finish a frame.
+now time is 38591567play_audio @1
+decode thread: a16384 ,v79049, 0
+decoder_mmio 7800000 7a00000 1
+decode thread: finish a frame.
+now time is 38793877play_audio @2
+decode thread: a16384 ,v79047, 1
+decode thread: finish a frame.
+now time is 38897959play_audio @0
+decode thread: a16384 ,v79073, 2
+decode thread: finish a frame.
+now time is 39191870play_audio @1
+decode thread: a16384 ,v79065, 0
+decoder_mmio 7800000 7a00000 1
+decode thread: finish a frame.
+now time is 39392982play_audio @2
+decode thread: a16384 ,v79051, 1
+decoder_mmio 7800000 7c00000 1
+decode thread: finish a frame.
+now time is 39496858play_audio @0
+decode thread: a16384 ,v79035, 2
+decode thread: finish a frame.
+now time is 39792866play_audio @1
+decode thread: a16384 ,v79028, 0
+decoder_mmio 7800000 7a00000 1
+decode thread: finish a frame.
+now time is 39993813play_audio @2
+decode thread: a16384 ,v79060, 1
+decoder_mmio 7800000 7c00000 1
+decode thread: finish a frame.
+now time is 40095665play_audio @0
+decode thread: a16384 ,v79071, 2
+decoder_mmio 7800000 7e00000 1
+decode thread: finish a frame.
+now time is 40392866play_audio @1
+decode thread: a16384 ,v79075, 0
+decode thread: finish a frame.
+now time is 40593844play_audio @2
+decode thread: a16384 ,v79093, 1
+decoder_mmio 7800000 7c00000 1
+decode thread: finish a frame.
+now time is 40696875play_audio @0
+decode thread: a16384 ,v71579, 2
+decoder_mmio 7800000 7e00000 1
+decode thread: finish a frame.
+now time is 40993428play_audio @1
+decode thread: a16384 ,v69734, 0
+decode thread: finish a frame.
+now time is 41194070play_audio @2
+decode thread: a16384 ,v69101, 1
+decoder_mmio 7800000 7c00000 1
+decode thread: finish a frame.
+now time is 41297031play_audio @0
+decode thread: a16384 ,v69176, 2
+decoder_mmio 7800000 7e00000 1
+decode thread: finish a frame.
+now time is 41593062play_audio @1
+decode thread: a16384 ,v70254, 0
+decode thread: finish a frame.
+now time is 41794274play_audio @2
+decode thread: a16384 ,v69110, 1
+decoder_mmio 7800000 7c00000 1
+decode thread: finish a frame.
+now time is 41897018play_audio @0
+decode thread: a16384 ,v68493, 2
+decoder_mmio 7800000 7e00000 1
+decode thread: finish a frame.
+now time is 42193838play_audio @1
+decode thread: a16384 ,v69797, 0
+decode thread: finish a frame.
+now time is 42394638play_audio @2
+decode thread: a16384 ,v67284, 1
+decoder_mmio 7800000 7c00000 1
+decode thread: finish a frame.
+now time is 42497747play_audio @0
+decode thread: a16384 ,v67524, 2
+decoder_mmio 7800000 7e00000 1
+decode thread: finish a frame.
+now time is 42794012play_audio @1
+decode thread: a16384 ,v67085, 0
+decode thread: finish a frame.
+now time is 42994996play_audio @2
+decode thread: a16384 ,v68020, 1
+decoder_mmio 7800000 7c00000 1
+decode thread: finish a frame.
+now time is 43101033play_audio @0
+decode thread: a16384 ,v66783, 2
+decoder_mmio 7800000 7e00000 1
+decode thread: finish a frame.
+now time is 43394415play_audio @1
+decode thread: a16384 ,v68369, 0
+decoder_mmio 7800000 7a00000 1
+decode thread: finish a frame.
+now time is 43595345play_audio @2
+decode thread: a16384 ,v66912, 1
+[   43.792000] ocsdc 1fe10000.ocsdc: Data FIFO error!
+decode thread: finish a frame.
+now time is 43698549play_audio @0
+decode thread: a16384 ,v68390, 2
+decoder_mmio 7800000 7e00000 1
+decode thread: finish a frame.
+now time is 43994764play_audio @1
+decode thread: a16384 ,v66078, 0
+decoder_mmio 7800000 7a00000 1
+decode thread: finish a frame.
+now time is 44195683play_audio @2
+decode thread: a16384 ,v66978, 1
+decode thread: finish a frame.
+now time is 44298607play_audio @0
+decode thread: a16384 ,v66339, 2
+decoder_mmio 7800000 7e00000 1
+decode thread: finish a frame.
+now time is 44595121play_audio @1
+decode thread: a16384 ,v66941, 0
+decoder_mmio 7800000 7a00000 1
+decode thread: finish a frame.
+now time is 44796854play_audio @2
+decode thread: a16384 ,v65628, 1
+decoder_mmio 7800000 7c00000 1
+decode thread: finish a frame.
+now time is 44899621play_audio @0
+decode thread: a16384 ,v66735, 2
+decode thread: finish a frame.
+now time is 45195494play_audio @1
+decode thread: a16384 ,v65590, 0
+decoder_mmio 7800000 7a00000 1
+decode thread: finish a frame.
+now time is 45397060play_audio @2
+decode thread: a16384 ,v66265, 1
+decoder_mmio 7800000 7c00000 1
+decode thread: finish a frame.
+now time is 45499137play_audio @0
+decode thread: a16384 ,v64535, 2
+decoder_mmio 7800000 7e00000 1
+decode thread: finish a frame.
+now time is 45799539play_audio @1
+decode thread: a16384 ,v66068, 0
+decoder_mmio 7800000 7a00000 1
+decode thread: finish a frame.
+now time is 45946722play_audio @2
+decode thread: a16384 ,v65715, 1
+decode thread: finish a frame.
+now time is 46049866play_audio @0
+decode thread: a16384 ,v65657, 2
+decoder_mmio 7800000 7e00000 1
+decode thread: finish a frame.
+now time is 46296817play_audio @1
+decode thread: a16384 ,v65966, 0
+decode thread: finish a frame.
+now time is 46497834play_audio @2
+decode thread: a16384 ,v66432, 1
+decode thread: finish a frame.
+now time is 46599796play_audio @0
+decode thread: a16384 ,v65159, 2
+decoder_mmio 7800000 7e00000 1
+decode thread: finish a frame.
+now time is 46846766play_audio @1
+decode thread: a16384 ,v65506, 0
+decoder_mmio 7800000 7a00000 1
+decode thread: finish a frame.
+now time is 47047415play_audio @2
+decode thread: a16384 ,v65121, 1
+decoder_mmio 7800000 7c00000 1
+decode thread: finish a frame.
+now time is 47150359play_audio @0
+decode thread: a16384 ,v66596, 2
+decode thread: finish a frame.
+now time is 47396988play_audio @1
+decode thread: a16384 ,v65860, 0
+decoder_mmio 7800000 7a00000 1
+decode thread: finish a frame.
+now time is 47600992play_audio @2
+decode thread: a16384 ,v66785, 1
+decoder_mmio 7800000 7c00000 1
+decode thread: finish a frame.
+now time is 47699944play_audio @0
+decode thread: a16384 ,v66747, 2
+decode thread: finish a frame.
+^C
