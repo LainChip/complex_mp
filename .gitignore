@@ -1,2 +1,5 @@
 test_*
 complex_mp
+mediaplayer
+.vscode
+*.S
