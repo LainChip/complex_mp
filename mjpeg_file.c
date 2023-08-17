@@ -212,8 +212,13 @@ int decode_thread(int mpeg_fd,
                 usleep(50000);
             }
             read_size += frame_size;
+            if (read_size >= mpeg_size)
+            {
+                break;
+            }
         }
     }
     share_param->decode_end = 1;
+    printf("decoder: exit!");
     return 0;
 }
